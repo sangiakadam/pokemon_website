@@ -28,6 +28,16 @@ for (let pokObj of data) {
   cardsrow.appendChild(div);
 }
 
+//input element on  change 
+inputEl.addEventListener('input',(event)=>{
+  console.log(event.target.value)
+
+  const finterd=[];
+  for (let obj in data){
+    if (obj.name.includes(currvalue)) finterd.pish(obj)
+  }
+}
+
 // console.log(data);
 // // to targetthe input element
 // const inputEl = document.querySelector("input");
